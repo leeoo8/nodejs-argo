@@ -32,12 +32,12 @@ jobs:
         run: "npm install"
 
       - name: Build step
-        run: "node index.js"
+        run: "npm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "leeoo8-nodejs-argo-97"
+          project: "leeoo8-nodejs-argo-59"
           entrypoint: "index.js"
           root: ""
           
